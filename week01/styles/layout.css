@@ -1,27 +1,26 @@
 body {
     display: grid;
+    grid
 
 }
 
-header {
-
+header, footer {
+    background-color: #000000;
 }
 
 nav {
-    background-color: darkslategray;
-    font-size: 1rem;
+    background-color: #02274d;
 }
 
 nav a {
     display: flex;
     justify-content: space-around;
-    background-color: ;
+    padding: 1rem;
+    color: #f08080;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 h1, h2 {
-    color: lightgrey;
-}
-
-footer {
-    
+    color: #d3d3d3;
 }
