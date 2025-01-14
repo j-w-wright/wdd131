@@ -5,13 +5,28 @@ body {
     font-weight: 400;
     max-width: 800px;
     margin: 0 auto;
+}
+
 h1 {
     font-weight: 100;
+    font-size: 2rem;
+    padding: 20px;
 }
+
+h2 {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: #90a9b7;
+    
+}
+
+
 
 nav {
     margin: 0 auto;
-    background-color: #efd09e;
 }
 
 nav ul {
@@ -27,7 +42,21 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #90a9b7;
+    background-color: #efd09e;
+}
+
+.home_title {
+    display: block;
+    text-align: center;
+}
+
+.container_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container_home figcaption {
+    text-align: center;
 }
 
 /* Larger view *****************************************/
