@@ -3,15 +3,40 @@
 body {
     font-family: "Roboto", serif;
     font-weight: 400;
-}
 
 h1 {
     font-weight: 100;
 }
 
+nav {
+    background-color: #efd09e;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
 nav a {
     display: block;
     color: #272727;
-    
-
+    text-align: center;
+    padding: 1.5rem;
+    text-decoration: none;
 }
+
+nav a:hover {
+    background-color: #90a9b7;
+    color: #efd09e;
+}
+
+/* Larger view *****************************************/
+
+/*nav ul {
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+    
