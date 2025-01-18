@@ -24,18 +24,15 @@ nav a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    border: #000 solid; /* remove when ready to submit */
 }
 
 nav a:hover {
     color: #80d39b;
-    border: 1px solid #fff; /* remove when ready to submit */
 }
 
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    border: #000 solid; /* remove when ready to submit */
     padding: 10px;
     grid-gap: 10px;
 }
@@ -51,9 +48,9 @@ h2 {
 h3 {
     text-align: center;
     padding-top: 30px;
-    font-size: 1.2rem;
-    font-weight: 300;
-
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #80d39b;
 }
 
 footer {
