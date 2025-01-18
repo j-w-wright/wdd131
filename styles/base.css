@@ -1,31 +1,88 @@
 
 
 body {
-    font-family: "Roboto", serif;
-    font-weight: 400;   
+    font-family: "Roboto", serif;  
 }
 
 h1 {
     font-weight: 100;
+    background-color: #ff5154;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #272727;
+}
 nav a {
     display: block;
     color: #fff;
-    text-align: center;
     padding: 1rem;
+    text-align: center;
     text-decoration: none;
+    border: #000 solid; /* remove when ready to submit */
 }
 
 nav a:hover {
-    border: 1px solid #fff;
+    color: #80d39b;
+    border: 1px solid #fff; /* remove when ready to submit */
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: #000 solid; /* remove when ready to submit */
+    padding: 10px;
+    grid-gap: 10px;
 }
 
-nav ul li {
-    list-style-type: none;
+h2 {
+    text-align: center;
+    background-color: #ff5154;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+footer {
+    background-color: #ff5154;   
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.card {
+    border: 1px solid #272727;
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 5px;
+}
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.mountains {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

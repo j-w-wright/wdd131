@@ -7,47 +7,56 @@
     <meta name="description" content="Jared Wright WDD 131 - Dynamic Web Fundamentals Course Webpage">
     <meta name="author" content="Jared Wright">
     
+    <!--CSS file connection-->
     <link rel="stylesheet" href="styles/base.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">          <!--Google Font Roboto-->
+    <!--Google Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--JS file connection-->
+    <script src="scripts/getdates.js" defer></script>
 
 </head>
 <body>
     <header>
         <h1>WDD 131 Dynamic Web Fundamentals - Jared Wright</h1>
         <nav>
-            <ul>
-                <a href="www.linkedin.com/in/jared-wright-b7711b2b3">LinkedIn</a>
-                <a href="https://byupw.instructure.com">Canvas</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng&id=p11#p11">Scripture</a>
-                <a href="">Final Project</a>
-            </ul>
+            <a href="www.linkedin.com/in/jared-wright-b7711b2b3">LinkedIn</a>
+            <a href="https://byupw.instructure.com">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=eng&id=p11#p11">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>placeholder for information about me</p>
-            <img src="images/aboutme.jpeg" alt="Portrait of Jared Wright" width="200">
-            <p>placeholder for information about the Brigham City Temple</p>
-            <img src="images/brigham_city_utah_temple.jpeg" alt="Brigham City Temple" width="150">
-        </section>
-        <section class="card">
-            <h2>Web Development Resources</h2>
-            <nav class="resource-links">
+    <div>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="aboutme"> <!--need to add "real" text-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi qui unde sequi ipsam ducimus facilis suscipit veniam! Veritatis nesciunt doloremque molestias perspiciatis at temporibus error perferendis quam consectetur expedita, adipisci aspernatur porro blanditiis. Voluptatem aliquam labore consequatur enim maxime!</p>
+                    <img src="images/aboutme.jpeg" alt="Portrait of Jared Wright" width="250">
+                </div>
+                <h3>Mountains of Northern Utah</h3> 
+                <div class="mountains"> <!--need to add "real" text-->
+                    <img src="images/mountains_utah.jpeg" alt="Dirt road in the mountains" width="130">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt perferendis ipsam, alias architecto nam illo accusamus enim porro repudiandae odit. Molestiae debitis, harum explicabo, ut ab maiores libero, quia eos amet dolore vel perferendis.</p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
                 <ul>
-                    <li>placeholder</li>
-                    <li>placeholder</li>
-                    <li>placeholder</li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                    <li><a href="#">Placeholder 2</a></li>
+                    <li><a href="#">Placeholder 3</a></li>
                 </ul>
-            </nav>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <footer>
-        <p>&#169<span id="currentyear"></span> |  Jared Wright  |  Utah</p>
-        <p id="lastModified"></p> <!--will be populated with JavaScript code. -->
+        <p>&#169<span id="currentyear">2025</span> |  Jared Wright  |  Utah</p>
+        <p id="lastModified">Last Modification: </p> <!--will be populated with JavaScript code. -->
     </footer>
 </body>
 </html>
