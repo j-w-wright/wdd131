@@ -51,6 +51,8 @@ h2 {
 h3 {
     text-align: center;
     padding-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 300;
 
 }
 
@@ -73,6 +75,7 @@ footer {
 
 .aboutme {
     display: grid;
+    grid-gap: 5px;
     grid-template-columns: 2fr 1fr;
     padding-top: 20px;
     padding-right: 20px;
@@ -81,6 +84,7 @@ footer {
 
 .mountains {
     display: grid;
+    grid-gap: 5px;
     grid-template-columns: 1fr 2fr;
     padding-bottom: 20px;
     padding-left: 20px;
