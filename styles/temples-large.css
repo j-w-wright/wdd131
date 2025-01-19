@@ -1,11 +1,27 @@
 @media screen and (min-width: 700px) {
-    nav a {
-        display: flex;
+    header {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    
+    .navigation {
+        flex-direction: row;
         justify-content: space-around;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
     }
 
     .container_home {    
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #menu {
+        display: none;
     }
 }

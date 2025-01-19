@@ -18,33 +18,54 @@ h2 {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
     background-color: #272727;
     padding: 10px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    text-decoration: none;
-    border: 1px solid #fff; /*remove when complete*/
+.page_title {
+    text-align: center;
 }
 
 nav a {
+    display: block;
+    text-align: right;
     color: #fff;
     padding: 1rem;
     text-decoration: none;
-    border: 1px solid #fff; /*remove when complete*/
 }
 
 nav a:hover {
     color: #ff5154;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 main, footer, header {
     max-width: 800px;
+}
+
+#menu {
+    display: flex;
+    justify-content: right;
+    font-size: 1.5rem;
+    padding-right: 30px;
+    color:#fff;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
 }
 
 .home_title {
@@ -55,11 +76,9 @@ main, footer, header {
 .container_home {
     display: grid;
     grid-template-columns: 1fr;
-    /*border: 1px solid #272727; /* remove when complete */
 }
 
 figure { 
-    border: 1px solid #272727;
     text-align: center;
 }
 
@@ -68,4 +87,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 5px;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
 }
