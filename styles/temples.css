@@ -14,7 +14,7 @@ h1 {
 
 h2 {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 header {
@@ -43,8 +43,8 @@ nav a:hover {
     color: #ff5154;
 }
 
-main {
-    max-width: 640px;
+main, footer, header {
+    max-width: 800px;
 }
 
 .home_title {
@@ -69,14 +69,3 @@ footer {
     text-align: center;
     padding: 5px;
 }
-
-/* Larger view *****************************************/
-
-/*nav ul {
-    display: flex;
-}
-
-nav ul li {
-    flex: 1 1 100%;
-}
-    

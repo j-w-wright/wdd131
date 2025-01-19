@@ -1,9 +1,11 @@
-@media (min-width: 640px) {
-    nav ul {
+@media screen and (min-width: 700px) {
+    nav a {
         display: flex;
-        /*justify-content: space-around;*/
+        justify-content: space-around;
     }
-    nav ul li {
-        flex: 1 1 100%;
+
+    .container_home {    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
