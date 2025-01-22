@@ -1,0 +1,9 @@
+
+
+
+
+.hero img {
+    width: 100%;
+    height: auto;  /* easiest way to maintain the image aspect ratio */
+}
+
