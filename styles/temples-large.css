@@ -1,4 +1,15 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+    .container_home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem auto;
+    }
+}
+
+
+
+
+@media screen and (min-width: 825px) {
     header {
         display: grid;
         grid-template-columns: 2fr 3fr;
@@ -19,6 +30,7 @@
     .container_home {    
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 1rem auto;
     }
 
     #menu {
