@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto Canada - Jared Wright</title>
+    <meta name="description" content="Jared Wright's place assignment webpage">
+    <meta name="author" content="Jared Wright">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+<!--Google Font Lexend Giga, serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="page_title">Toronto, Canada</h1>
+    </header>
+    <main>
+        <figure>
+            <img src="#" alt="Toronto, Canada skyline"> <!--need to get two different sized (small and large) pictures of the Toronto, Canada skyline-->
+        </figure>
+        <section>
+            <h2 class="data_title">Data</h2>
+            <div class="data">
+                <p> Area: <span id="area"></span></p>
+                <p> Population: <span id="population"></span></p>
+                <p> Languages: <span id="languages"></span></p>
+                <p> Currency: <span id="currency"></span></p>
+                <p> Time Zone: <span id="time_zone"></span></p>
+            </div>
+        </section>
+        <section>
+            <h2 class="weather_title">Weather</h2>
+            <div class="weather_icon">
+                <!--will be populated with JavaScript-->
+            </div>
+            <div class="weather">
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Conditions: <span id="conditions"></span></p>
+                <p>Wind: <span id="wind"></span></p>
+                <p>Wind Chill: <span id="wind_chill"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&#169;<span id="currentYear"></span> | Jared Wright | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p> <!--will be populated with JavaScript-->
+    </footer>
+</body>
+</html>
