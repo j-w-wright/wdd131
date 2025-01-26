@@ -7,14 +7,16 @@
     <meta name="description" content="Jared Wright's place assignment webpage">
     <meta name="author" content="Jared Wright">
 
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
+<!--CSS Files-->
+    <link rel="stylesheet" href="styles/place.css"> <!--mobile-->
+    <link rel="stylesheet" href="styles/place-large.css"> <!--large screen-->
 
-<!--Google Font Lexend Giga, serif-->
+<!--Google Font Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
+<!--JavaScript file-->
     <script src="scripts/place.js" defer></script>
 
 </head>
@@ -23,28 +25,32 @@
         <h1 class="page_title">Toronto, Canada</h1>
     </header>
     <main>
-        <figure>
-            <img src="#" alt="Toronto, Canada skyline"> <!--need to get two different sized (small and large) pictures of the Toronto, Canada skyline-->
-        </figure>
-        <section>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large_toronto_skyline.webp" media="(min-width: 1100px)">
+                <img src="images/hero-small_toronto_skyline.webp" alt="Toronto, Canada city skyline" width="500" height="250"> <!--need to get 3 different sized (small, medium and large) pictures of the Toronto, Canada skyline-->
+            </picture>
+        </div>
+        <section class="city_data">
             <h2 class="data_title">Data</h2>
             <div class="data">
-                <p> Area: <span id="area"></span></p>
-                <p> Population: <span id="population"></span></p>
-                <p> Languages: <span id="languages"></span></p>
-                <p> Currency: <span id="currency"></span></p>
-                <p> Time Zone: <span id="time_zone"></span></p>
+                <p> Founded: 1793</p>
+                <p> Area: 630 sq. km</p>
+                <p> Population: 3.026 million</p>
+                <p> Languages: English, French</p>
+                <p> Currency: Canadian Dollar</p>
+                <p> Time Zone: Eastern Standard Time (EST)</p>
             </div>
         </section>
-        <section>
+        <section class="weather_data">
             <h2 class="weather_title">Weather</h2>
             <div class="weather_icon">
-                <!--will be populated with JavaScript-->
+                <img src="images/partlycloud_icon.svg" alt="party cloudy weather icon" width="50">
             </div>
             <div class="weather">
-                <p>Temperature: <span id="temperature"></span></p>
-                <p>Conditions: <span id="conditions"></span></p>
-                <p>Wind: <span id="wind"></span></p>
+                <p>Temperature: -7&#176;C<span id="temperature"></span></p>
+                <p>Conditions: Partly Cloudy<span id="conditions"></span></p>
+                <p>Wind: 5km/h<span id="wind"></span></p>
                 <p>Wind Chill: <span id="wind_chill"></span></p>
             </div>
         </section>
