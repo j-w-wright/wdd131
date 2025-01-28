@@ -10,6 +10,11 @@
         padding: 10px;
     }
 
+    .data_title {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
     .weather_data {
         position: absolute;
         top: 390px;
