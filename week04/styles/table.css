@@ -1,0 +1,29 @@
+body {
+    font-family: "Caveat", serif;
+    font-size: 3rem;
+}
+
+table {
+    width: 700px;
+    border: 1px solid #111111;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: smaller;
+    padding: 0.2rem;
+}
+
+th {
+    background-color: dodgerblue;
+    font-weight: 900;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(174, 201, 225);
+}
+
+tbody {
+    text-align: center;
+}
