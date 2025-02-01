@@ -1,5 +1,5 @@
 @media screen and (min-width: 600px) {
-    .container_home {
+    .temple-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 1rem auto;
@@ -27,7 +27,7 @@
         flex: 1 1 100%;
     }
 
-    .container_home {    
+    .temple-grid {    
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 1rem auto;
