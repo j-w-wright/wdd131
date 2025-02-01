@@ -13,8 +13,8 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 header {
@@ -22,8 +22,9 @@ header {
     padding: 10px;
 }
 
-.page_title {
+.page-title {
     text-align: center;
+    display: block;
 }
 
 nav a {
@@ -69,12 +70,11 @@ main, footer, header {
     display: none;
 }
 
-.home_title {
-    display: block;
+.filter-title {
     text-align: center;
 }
 
-.container_home {
+.temple-grid {
     display: grid;
     grid-template-columns: 1fr;
 }
