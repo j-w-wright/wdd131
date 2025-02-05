@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #011627; /* rich black */
+    --secondary-color: #07f4f4; /* vivid cyan */
+    --accent-color-1: #ffffff; /* white */
+    --accent-color-2: #747578; /* gray */
+}
+body {
+    font-family: "Roboto", serif;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+h2, h4 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+    background-color: #07f4f4;
+    padding: 10px;
+}
+
+figcaption {
+    font-weight: 200;
+    font-size: .7rem;
+}
+
+.page_title {
+    border: 2px solid #011627;
+    border-radius: 5px;
+}
+
+.navigation {
+    background-color: var(--accent-color-2);
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 15px;
+}
+nav a {
+    color: var(--accent-color-1);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+div h1 {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent-color-2);
+    color: #ffffff;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section ul {
+    list-style: none;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--accent-color-1);
+    padding: 10px;
+}
+
+.wireframe ul li {
+    padding: 5px;
+}
