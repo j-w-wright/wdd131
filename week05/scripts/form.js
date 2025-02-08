@@ -1,3 +1,6 @@
+
+
+
 const products = [
     {
       id: "fc-1888",
@@ -26,6 +29,28 @@ const products = [
     }
   ];
 
+//--------PRODUCTS NAMES-------------//  
+// Working on figuring this out.
+//let productName = document.getElementById("productName");
+//let optionName = products.name;
+
+//if (optionName === document.option.value)
+
+
+//----NUMBER OF VISITS-----//
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit.`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
 
 //--------FOOTER----------//  
 let date = new Date();

@@ -9,7 +9,7 @@ h1 {
 }
 .prf1 fieldset {
     margin: 2rem 0;
-    border-radius: 6px;
+    border: none;
     padding: .5rem 2%;
 }
 
@@ -34,6 +34,7 @@ h1 {
     color: #555;
     width: 100%;
     max-width: 400px;
+    font-size: .8rem;
 }
 
 .prf1 select {
@@ -52,10 +53,6 @@ h1 {
 .prf1 input[type="checkbox"] {
     margin-right: 10px;
     margin-bottom: 10px;
-}
-
-textarea {
-    height: 100px;
 }
 
 .prf1 input[type="submit"] {
@@ -78,7 +75,21 @@ textarea {
     border-bottom: 6px solid green;
 }
 
+.prf1 select:required {
+    border-bottom: 6px solid red;
+}
+
+.prf1 select:required:valid {
+    border-bottom: 6px solid green;
+}
+
 .prf1 input[type="date"], 
 .prf1 select {
     font-size: .8rem;
+}
+
+.prf1 .features,
+.prf1 .stars {
+    padding-top: 20px;
+    font-size: 1rem;
 }

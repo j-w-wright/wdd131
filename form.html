@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Activity for Jared Wright</title>
+    <meta name="description" content="Form Activity">
+    <meta name="author" content="Jared Wright">
+
+<!--CSS Files-->
+    <link rel="stylesheet" href="styles/form.css">
+
+<!--Google Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+<!--JavaScript file-->
+    <script src="scripts/form.js" defer></script>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="prf1">
+            <fieldset>
+                <label for="productName">Product Name*</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product &darr;</option>
+                        <!--options created dynamically with JavaScript-->
+                    <option value="flux capacitor"></option>
+                    <option value="low voltage reactor"></option>
+                    <option value="power laces"></option>
+                    <option value="time circuits"></option>
+                    <option value="warp equalizer"></option>
+                </select>
+
+                <div class="stars">Overall Rating</div>
+                <label><input type="radio" id="fiveStar" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+                <label><input type="radio" id="fourStar" name="rating" value="4" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" id="threeStar" name="rating" value="3" required>&star;&star;&star;</label>
+                <label><input type="radio" id="twoStar" name="rating" value="2" required>&star;&star;</label>
+                <label><input type="radio" id="oneStar" name="rating" value="1" required>&star;</label>
+
+                <label>Date of Installation* <input type="date" id="installation" name="completeDate" required></label> <!--need to update this to only have mm/dd/yyyy-->
+
+                <div class="features">Which features did you find useful in the product? <span>(Check all that apply)</span></div>
+                <label><input type="checkbox" id="durability" name="productDurability" value="yes">Durability</label>
+                <label><input type="checkbox" id="ease" name="easeUse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="productPerformance" value="yes">Performance</label>
+                <label><input type="checkbox" id="design" name="productDesign" value="yes">Design</label>   
+                
+                <div>
+                <label>Written Review <span>(Optional)</span>
+                <textarea id="review" name="writtenReview" rows="8" placeholder="Share your review"></textarea></label>
+                </div>
+                <div>
+                <label>Your Name <span>(Optional)</span><input type="text" id="name" name="user_name"></label>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Send Review">
+        </form>
+
+       <p><span class="label">Number of Visits: </span><span class="visits"></span></p> 
+    </main>
+    <footer>
+        <p>&#169;<span id="currentYear"></span> | Jared Wright | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
