@@ -1,4 +1,66 @@
+
+
+
+
+h1 {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
 .prf1 fieldset {
     margin: 2rem 0;
-    
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.prf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.prf1 span {
+    font-style: italic;
+}
+
+.prf1 input[type="text"],
+.prf1 input[type="date"],
+.prf1 textarea {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.prf1 select {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-left: 8px solid red;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 425px;
+}
+
+.prf1 input[type="radio"],
+.prf1 input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.prf1 input[type="submit"] {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    font-size: 1rem;
+    width: 96%;
+    max-width: 428px;
+    margin: -1rem 2% 2rem 2%;
 }
