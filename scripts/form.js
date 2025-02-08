@@ -29,8 +29,10 @@ const products = [
     }
   ];
 
-//--------PRODUCTS NAMES-------------//  
+//--------PRODUCT NAMES-------------//  
 // Working on figuring this out.
+
+
 //let productName = document.getElementById("productName");
 //let optionName = products.name;
 
