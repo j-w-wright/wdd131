@@ -24,6 +24,51 @@
 
     </header>
     <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="prf1"></form>
+        <fieldset>
+            <label for="productName">Product Name*</label>
+            <select id="product" name="productName" required>
+                    <option value="" disabled>Select a Product...</option>
+                    <!--options created dynamically with JavaScript-->
+                <option value="fluxCapacitor"></option>
+                <option value="lowVoltageReactor"></option>
+                <option value="powerLaces"></option>
+                <option value="timeCircuits"></option>
+                <option value="warpEqualizer"></option>
+            </select>
+
+            <div>
+            <label for="rating">Overall Rating</label>
+                <div class="stars">
+                    <label>&star;<input type="radio" id="oneStar" name="rating" value="1" required></label>
+                    <label>&star;&star;<input type="radio" id="twoStar" name="rating" value="2" required></label>
+                    <label>&star;&star;&star;<input type="radio" id="threeStar" name="rating" value="3" required></label>
+                    <label>&star;&star;&star;&star;<input type="radio" id="fourStar" name="rating" value="4" required></label>
+                    <label>&star;&star;&star;&star;&star;<input type="radio" id="fiveStar" name="rating" value="5" required></label>
+                </div>
+            </div>
+
+            <label>Date of Installation <input type="date" id="installation" name="completeDate" required></label> <!--need to update this to only have mm/dd/yyyy-->
+
+            <div>Which features did you find useful in the product? <span>Check all that apply</span>
+                <label><input type="checkbox" id="durability" name="productDurability" value="yes">Durability</label>
+                <label><input type="checkbox" id="ease" name="easeUse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="productPerformance" value="yes">Performance</label>
+                <label><input type="checkbox" id="design" name="productDesign" value="yes">Design</label>
+            </div>    
+            <div>
+                <label>Written Review <span>Optional</span>
+                <!--<label><input type="textarea" id="review" name="writtenReview"></label>-->
+                <textarea id="review" name="writtenReview"></textarea></label>
+            </div>
+            <div>
+                <label>Your Name <span>Optional</span>
+                <input type="text" id="name" name="user_name"></label>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Send Review">
 
     </main>
     <footer>
