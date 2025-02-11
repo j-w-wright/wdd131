@@ -94,6 +94,7 @@ const temples = [
     },
 ];
 
+//populate each temple card with information
 createTempleCard();
 
 function createTempleCard() {
@@ -112,8 +113,8 @@ function createTempleCard() {
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName}  Temple`);
         img.setAttribute("loading", "lazy");
-        img.style.height = "250px";
-        img.style.width = "400px";
+        img.style.width = "100%";
+        img.style.height = "70%";
 
         card.appendChild(name);
         card.appendChild(location);
