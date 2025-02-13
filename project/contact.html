@@ -37,8 +37,37 @@
             </nav>
         </div>
     </header>
-<main></main>
+<main>
+    <div class="contact_us">
+        <h2>Contact Us</h2>
+        <p></p></div>
+    <form method="get" action="confirmation.html" class="cf1">
+        <fieldset>
+            <div class="user_info">Your Information</div>
+                <label>Name:* <input type="text" id="name" name="user_name" required></label>
+                <label>Email:* <input type="text" id="email" name="user_email" required></label>
+    
+            <div class="message_us">Topic of Your Message</div>
+                <label><input type="radio" id="general"  name="topic">General Question</label>
+                <label><input type="radio" id="available" name="topic">Available Artwork</label>
+                <label><input type="radio" id="request" name="topic">Artwork Request</label>
+                <label><input type="radio" id="other" name="topic">Other</label>
+            <div>
+                <label>Please share your message*<textarea id="message" name="message" rows="10" placeholder="Type your message here." required></textarea></label>
+            </div>
+        </fieldset>
+        <button type="submit">Send your message</button>
+    </form>
+</main>
 <footer>
+    <div class="social_media">
+        <h4 class="social_media_title">Stay In Touch</h4>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+    </div>
     <p>&#169;<span id="currentYear"></span> | Jared Wright | Utah</p>
     <p>Last Modified: <span id="lastModified"></span></p> <!--will be populated with JavaScript code.-->
 </footer>
