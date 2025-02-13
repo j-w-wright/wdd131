@@ -13,6 +13,7 @@ body {
 h1 {
     font-weight: 100;
     font-size: 3rem;
+    text-align: center;
 }
 
 h2, h4 {
@@ -31,7 +32,24 @@ h2 {
     padding: 10px;
 }
 
+/* navigation links */
+.navigation {
+    background-color: var(--accent-color-2);
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 15px;
+}
+nav a {
+    color: var(--accent-color-1);
+    text-decoration: none;
+}
 
+nav a:hover {
+    color: var(--secondary-color);
+    border-radius: 10px;
+    transition: .5s;
+}
 
 
 /* contact us form */
@@ -93,4 +111,18 @@ h2 {
 /* footer */
 .social_media {
     display: grid;
+    justify-content: center;
+    list-style: none;
+    align-content: center;
+    padding: 15px;
+}
+.social_media a {
+    text-decoration: none;
+    color: var(--accent-color-1);
+}
+
+footer {
+    background-color: var(--accent-color-2);
+    color: #ffffff;
+    padding: 10px;
 }
