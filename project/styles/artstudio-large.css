@@ -1,0 +1,38 @@
+@media screen and (min-width: 1000px) {
+    .artist_info, .current {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        font-size: 1.1rem;
+    }
+
+    .artist_info img,
+    .current img {
+        width: 350px;
+        padding: 30px;
+    }
+
+    .artwork-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        text-decoration: none;
+        background-color: var(--accent-color-2);
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #menu, #filter_menu {
+        display: none;
+    }
+}
+

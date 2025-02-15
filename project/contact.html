@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <meta name="description" content="Contact Us webpage for the J.W.Wright Art Studio site">
+    <title>Contact the Artist</title>
+    <meta name="description" content="Contact the artist webpage for the J.W.Wright Art Studio site">
     <meta name="author" content="Jared Wright">
 
 <!--CSS file-->    
@@ -28,11 +28,11 @@
             <a id="menu" href="#"></a> <!--for the hamburger menu-->
             <nav>
                 <ul class="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Artwork</a></li>
-                    <li><a href="#">Art Resources</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="resources.html">Art Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -60,13 +60,18 @@
     </form>
 </main>
 <footer>
-    <div>
-        <ul class="social_media">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
-    </div>
+    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    <nav class="social_media">
+        <a href="https://facebook.com">
+            <img src="images/facebook-icon.png" alt="Facebook icon" width="35">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/x-icon.png" alt="X, formerly Twitter, icon" width="35">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram-icon.png" alt="Instagram icon" width="35">
+        </a>
+    </nav>
     <p>&#169;<span id="currentYear"></span> | Jared Wright | Utah</p>
     <p>Last Modified: <span id="lastModified"></span></p> <!--will be populated with JavaScript code.-->
 </footer>

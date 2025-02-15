@@ -22,75 +22,56 @@
 <body>
     <header>
         <div>
-        <h1 class="page_title">J.W.Wright Art Studio</h1>
+            <h1 class="page_title">J.W.Wright Art Studio</h1>
         </div>
         <div>
             <a id="menu" href="#"></a> <!--for the hamburger menu-->
             <nav>
                 <ul class="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Artwork</a></li>
-                    <li><a href="#">Art Resources</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="resources.html">Art Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-<main>
-    <section>
+    <main>
         <h2 class="home_title">My Artwork</h2>
-        <div class="container_home">   <!--Remove and use JavaScript to dynamically add artwork-->
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-            <figure>
-                <img src="images/brigham_city_utah_temple_north.jpeg" alt="The Brigham City Utah LDS Temple from the north" width="200">
-                <figcaption>Brigham City Utah </figcaption>
-            </figure>
-        </div> 
-    </section>
-</main>
-<footer>
-    <div id="social_media">
-        <h4 id="social_media_title">Stay In Touch</h4>
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
-    </div>
-    <p>&#169;<span id="currentYear"></span> | Jared Wright | Utah</p>
-    <p>Last Modified: <span id="lastModified"></span></p> <!--will be populated with JavaScript code.-->
-</footer>
+            <p>Use the links below to filter the artwork.  I will add that the large size is an area greater than 90 square inches and small is an area of less than 90 square inches.</p>  <!--measure the area of each picture and get a more accurate size measurement-->
+            <div>
+                <a id="filter_menu" href="#"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#" id="all">All</a></li>
+                        <li><a href="#" id="painting">Paintings</a></li>
+                        <li><a href="#" id="drawing">Drawings</a></li>
+                        <li><a href="#" id="large">Large</a></li> <!--get actual area of the painting (greater than 90 sq. in.)-->
+                        <li><a href="#" id="small">Small</a></li> <!--get actual area of the painting (less than 90 sq. in. )-->
+                    </ul> 
+                </nav>   
+            </div>
+        <section>
+            <h3 class="filter-title">All</h3>
+            <div class="artwork-grid"></div> 
+        </section>
+    </main>
+    <footer>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        <nav class="social_media">
+            <a href="https://facebook.com">
+                <img src="images/facebook-icon.png" alt="Facebook icon" width="35">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/x-icon.png" alt="X, formerly Twitter, icon" width="35">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-icon.png" alt="Instagram icon" width="35">
+            </a>
+        </nav>
+        <p>&#169;<span id="currentYear"></span> | Jared Wright | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p> <!--will be populated with JavaScript code.-->
+    </footer>
 </body>
 </html>

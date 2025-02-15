@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <meta name="description" content="About Us webpage for the J.W.Wright Art Studio site">
+    <title>About the Artist</title>
+    <meta name="description" content="About the artist webpage for the J.W.Wright Art Studio site">
     <meta name="author" content="Jared Wright">
 
 <!--CSS file-->    
@@ -22,37 +22,45 @@
 <body>
     <header>
         <div>
-        <h1 class="page_title">J.W.Wright Art Studio</h1>
-        </div>
-        <div>
-            <a id="menu" href="#"></a> <!--for the hamburger menu-->
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Artwork</a></li>
-                    <li><a href="#">Art Resources</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+            <h1 class="page_title">J.W.Wright Art Studio</h1>
+            </div>
+            <div>
+                <a id="menu" href="#"></a> <!--for the hamburger menu-->
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="artwork.html">Artwork</a></li>
+                        <li><a href="resources.html">Art Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
 <main>
-    <div id="artist_info">
+    <div class="artist_info_title">
         <h2>The Artist</h2>
-        <img src="#" alt="the artist, J.W.Wright" loading="lazy" width="250">
-        <p>J.W.Wright is a Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et eius nisi exercitationem eos, expedita odit pariatur quaerat culpa facilis voluptatibus blanditiis fuga quisquam recusandae veritatis nam, sequi incidunt dolore neque non asperiores dolorum. Numquam fuga velit error, praesentium facere unde placeat ipsam ab.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis quaerat quasi? Quasi dolorum eius eligendi neque nesciunt consequatur laudantium id maiores velit corporis odio optio perferendis laborum, delectus accusamus natus vel autem enim iure, obcaecati vitae iste magni esse! Similique labore blanditiis autem, quaerat aperiam fuga voluptatem, porro molestias tenetur maiores vitae nam voluptates dolores?</p>
+    </div>
+    <div class="artist_info">
+        <img src="images/artist.webp" alt="the artist, J.W.Wright" loading="lazy" width="300">
+        <p>Thanks for visiting my website!  I am Jared.  I love to draw and paint.  Currently, I am really enjoying painting with watercolors.  I really like the transparent look and free feel of watercolors.  They also are much easier to set up and clean-up, which is a big plus for me in my current situation.
+        I have created this site to help share my artwork and also share the opportunity with others to have a custom painting of their pet.
+        </p>
     </div>
 </main>
 <footer>
-    <div id="social_media">
-        <h4 id="social_media_title">Stay In Touch</h4>
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
-    </div>
+    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    <nav class="social_media">
+        <a href="https://facebook.com">
+            <img src="images/facebook-icon.png" alt="Facebook icon" width="35">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/x-icon.png" alt="X, formerly Twitter, icon" width="35">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram-icon.png" alt="Instagram icon" width="35">
+        </a>
+    </nav>
     <p>&#169;<span id="currentYear"></span> | Jared Wright | Utah</p>
     <p>Last Modified: <span id="lastModified"></span></p> <!--will be populated with JavaScript code.-->
 </footer>
