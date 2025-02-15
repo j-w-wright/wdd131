@@ -35,43 +35,12 @@ h2 {
 /* navigation links */
 .navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
     padding: 20px;
     background-color: var(--accent-color-2);
     margin: 0;
-}
-
-.navigation li {
-    display: none;
-}
-
-#menu, #filter_menu {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    color:#fff;
-    text-decoration: none;
-    background-color: var(--accent-color-2);
-    padding: 20px;
-}
-
-#menu::before, #filter_menu::before {
-    content: "☰";
-    color: var(--accent-color-1);
-}
-
-.show li {
-    display: block;
-    color: var(--primary-color);
-    text-align: center;
-    padding: 10px;
-}
-
-#menu.show::before {
-    content: "X";
-    color: var(--accent-color-1);
 }
 
 nav a {

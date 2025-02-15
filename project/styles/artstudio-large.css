@@ -18,21 +18,4 @@
         text-align: center;
 
     }
-
-    .navigation {
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0;
-        text-decoration: none;
-        background-color: var(--accent-color-2);
-    }
-
-    .navigation li {
-        display: block;
-    }
-
-    #menu, #filter_menu {
-        display: none;
-    }
 }
-

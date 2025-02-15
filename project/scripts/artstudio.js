@@ -138,16 +138,13 @@ function createArtworkCard(filteredArtworks) {
 }
 
 //hamburger menu
-const hamButton = document.querySelector("#menu");
+/*const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector("navigation");
-const 
-
-
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('show');
     hamButton.classList.toggle('show');
-});
+});*/
 
 //--------Footer-------------
 let date = new Date();
